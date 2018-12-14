@@ -1,0 +1,114 @@
+body{
+	font-family: 'Open Sans', sans-serif;
+	font-size:16px;
+}
+/*HEADER*/
+#masthead{
+	padding:10px 0;
+}
+#primary-menu li{
+	display:block;
+	float:none;
+}
+#primary-menu li>a{
+	color:#333;
+	display:block;
+	font-size:14px;
+	font-weight:600;
+	text-transform:uppercase;
+}
+
+.site-branding{
+	display:table;
+	margin:auto;
+}
+
+/*FOOTER*/
+.site-footer{
+	background-color:#313131;
+	color:#999999;
+	font-size:14px;
+	line-height:1;
+	padding:30px 0;	
+}
+.site-footer .custom-logo-link img{
+	max-width:67px;
+}
+.footer-menu{
+	list-style:none;
+	margin:0 0 20px 0;
+	padding:0;
+}
+.footer-menu li{
+	display:inline-block;
+}
+.footer-menu li>a{
+	color:#999999;
+	text-transform:uppercase;
+}
+.footer-menu li+li{
+	margin-left:15px;
+}
+.socialNcopy{
+	margin-bottom:15px;
+}
+.socialNcopy>a{
+	background-color:#999;
+	border-radius:50%;
+	color:#313131;
+	display:inline-block;
+	margin:0 2px;
+	vertical-align:middle;
+	text-align:center;
+	line-height:30px;
+	height:30px;
+	width:30px;
+}
+.socialNcopy p{
+	margin-bottom:0;
+	text-transform:uppercase;
+}
+@media (min-width:768px){
+	 #site-navigation .menu-menu-1-container{
+		 float:right;
+		 
+	 }
+	#primary-menu li{
+		display:inline-block;
+	}
+	#primary-menu li+li{
+		margin-left:18px;
+	}
+	.site-branding{
+			float:left;
+   }
+	.site-footer .col-sm-8{
+		text-align:right;
+  } 
+	.socialNcopy{
+		display:inline-block;
+		vertical-align:middle;
+	}
+	.socialNcopy p{
+		display:inline-block;
+		margin-left:15px;
+	}
+	.col-sm-5th{
+		float:left;
+		width:20%;
+	}
+}
+
+
+/*HOMEPAGE*/
+.home .post-thumbnail img{
+	width:100%;
+}
+.coursesPar .col-sm-5th{
+	padding-left:15px;
+	padding-right:15px;
+}
+/*PAGES*/
+.post-thumbnail img{
+	max-width:100%;
+}
