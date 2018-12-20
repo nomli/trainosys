@@ -26,7 +26,12 @@
 
 	<header id="masthead" class="site-header">
 	  <div class="container">
-		<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'trainosys' ); ?></button>
+	  	<div class="hamburger hamburger--spin-r" data-target="#site-navigation">
+		    <div class="hamburger-box">
+		      <div class="hamburger-inner"></div>
+		    </div>
+		  </div>
+		<!--<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'trainosys' ); ?></button>-->
 			<div class="site-branding">
 		  <?php
 				the_custom_logo();
@@ -43,5 +48,18 @@
 		</nav><!-- #site-navigation -->
 		</div>
 	</header><!-- #masthead -->
-
+	<script type="text/javascript">
+		(function(d){
+			var hamburgers = document.querySelectorAll(".hamburger");
+		    if (hamburgers.length > 0) {
+		      [].forEach.call(hamburgers, function(hamburger) {
+		        hamburger.addEventListener("click", function() {
+		          this.classList.toggle("is-active");
+		          d.querySelector(this.dataset.target).classList.toggle("toggled");
+		          d.body.classList.toggle("locked");
+		        }, false);
+		      });
+		    }
+		})(document);
+	</script>
 	<div id="content" class="site-content">
