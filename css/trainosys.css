@@ -318,6 +318,9 @@ textarea{
 .trainingCards h3,.trainingCards h4,.trainingCards p{
 	color: white;
 }
+.trainingCards h4{
+	margin-bottom:0;
+}
 /*TRAINING PAGE*/
 #trainingTypes h2{
 	color:#378ed0;
@@ -356,13 +359,17 @@ textarea{
 	padding-left:0;
 }
 /*ABOUT PAGE*/
-#post-66 .post-thumbnail{
+#post-25 .post-thumbnail,/*LIVE*/
+#post-66 .post-thumbnail{/*LOcal*/
 	background-color:#f4f4f4;
 	text-align: center;
 }
+#post-25 .post-thumbnail img,
 #post-66 .post-thumbnail img{
 	width:auto;
 }
+#post-25 h2,
+#post-25 h3,
 #post-66 h2,
 #post-66 h3{
 	color:#378ed0;
@@ -370,8 +377,13 @@ textarea{
 	text-transform: uppercase;
 	text-align: center;
 }
+#post-25 [class^="col-sm"],
 #post-66 [class^="col-sm"]{
 	text-align: center;
+}
+.aboutMission img,
+.aboutVission img{
+	margin-bottom:15px;
 }
 /*CONTACT PAGE*/
 #contactUs h2{
@@ -398,6 +410,17 @@ textarea{
 #contactUs address p{
 	font-weight: 600;
 	text-transform: uppercase;
+}
+span.wpcf7-list-item{
+	display: block;
+	margin:0 0 2px 0;
+}
+span.wpcf7-list-item label{
+	cursor: pointer;
+	font-weight: 700;
+	font-size:15px !important;
+	margin-bottom:0;
+	text-transform: capitalize !important;
 }
 /*MEDIA QUERY*/
 @media (max-width:767px){
