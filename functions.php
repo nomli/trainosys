@@ -129,7 +129,7 @@ function trainosys_scripts() {
 	
 	wp_enqueue_style( 'Fontawsome', 'https://use.fontawesome.com/releases/v5.6.1/css/all.css', array(), '20181213');
 	
-	wp_enqueue_style( 'trainosys-style',  get_template_directory_uri() . '/css/trainosys.css', array(), '20181213');
+	wp_enqueue_style( 'trainosys-style',  get_template_directory_uri() . '/css/trainosys.css', array(), '2019118');
 
 	wp_enqueue_script( 'JQUERY-Libraray', 'https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js', array(), '20181213', true );
 	
@@ -138,7 +138,10 @@ function trainosys_scripts() {
 	wp_enqueue_script( 'trainosys-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
 
 	wp_enqueue_script( 'trainosys-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );
-
+	
+	if( is_page( 27 ) ) {//IF TRAINING PAGE
+		wp_enqueue_script( 'inquiry-popen', get_template_directory_uri() . '/js/inquire.js', array(), '2019118', true );
+	}
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
 	}

@@ -17,6 +17,7 @@ ul{
 }
 [type="text"],
 [type="number"],
+[type="date"],
 select,
 textarea{
 	border-radius: 0 !important;
@@ -303,9 +304,8 @@ textarea{
 .trainingCards .row>.col-sm-4>div{
 	background-color:#378ed0;
 	color:white;
-	padding:15px;
+	padding:20px 15px;
     text-align: center;
-
     height: 100%;
     display: flex;
     justify-content: center;
@@ -320,6 +320,17 @@ textarea{
 }
 .trainingCards h4{
 	margin-bottom:0;
+}
+.trainingCards .col-sm-4>div p{
+	max-height:0;
+	-webkit-transition:max-height 0.5s ease-in-out;
+	-moz-transition:max-height 0.5s ease-in-out;
+	transition:max-height 0.5s ease-in-out;
+	overflow:hidden;
+	margin-bottom:0;
+}
+.trainingCards .col-sm-4>div:hover p{
+	max-height:200px;
 }
 /*TRAINING PAGE*/
 #trainingTypes h2{
@@ -340,6 +351,33 @@ textarea{
 #trainingTypes li{
 	margin-bottom:15px;
 }
+#trainingTypes .ctaWrap{
+	padding:15px 0;
+	text-align:center;
+}
+#trainingTypes .ctaWrap a{
+	color:black !Important;
+	font-weight:700;
+	text-transform:uppercase;
+}
+#trainingInq .modal-title{
+	color: #378ed0;
+	text-align:center;
+	text-transform:uppercase;
+}
+#trainingInq .row{
+	padding-bottom:10px;
+}
+#trainingInq  label{
+	font-weight:700;
+	text-transform:uppercase;
+}
+#trainingInq   small{
+	display:block;
+}
+#trainingInq input,#trainingInq select{
+	width:100%;
+}
 /*COURSES PAGE*/
 #courses h2{
 	color: #378ed0;
@@ -357,6 +395,12 @@ textarea{
 	margin-left:18px;
 	margin-bottom:15px;
 	padding-left:0;
+}
+#courses li{
+	cursor:pointer;
+}
+#courses li:hover{
+	text-decoration:underline;
 }
 /*ABOUT PAGE*/
 #post-25 .post-thumbnail,/*LIVE*/
