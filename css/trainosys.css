@@ -424,6 +424,12 @@ span.wpcf7-list-item label{
 }
 /*MEDIA QUERY*/
 @media (max-width:767px){
+	.home .featuredPrograms .col-xs-6 {
+			float: none;
+			display: inline-block;
+			vertical-align: top;
+			margin: 0 -2px;
+	}
 	#contactUs .container>.row{
 		margin:0 !important;
 	}
