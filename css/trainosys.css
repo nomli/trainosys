@@ -66,7 +66,7 @@ textarea{
 .site-branding{
 	display:table;
 	margin:auto;
-	max-width:70px;
+	max-width:130px;
 }
 /*!
  * Hamburgers
@@ -76,7 +76,7 @@ textarea{
  * @link https://github.com/jonsuh/hamburgers
  */
 .hamburger {
-  padding: 15px 15px;
+  padding: 0 15px;
   display: inline-block;
   cursor: pointer;
   transition-property: opacity, filter;
@@ -167,7 +167,7 @@ textarea{
 	padding:30px 0;	
 }
 .site-footer .custom-logo-link img{
-	max-width:67px;
+	max-width:150px;
 }
 .footer-menu{
 	list-style:none;
@@ -548,7 +548,14 @@ span.wpcf7-list-item label{
 		text-align: left;
 	}
 }
-
+@media (min-width:768px) and (max-width:991px){
+	.site-branding{
+		max-width:220px;
+	}
+	.main-navigation ul{
+		line-height:61px;
+	}
+}
 @media (min-width:992px){
 	.col-sm-5th{
 		float:left;
