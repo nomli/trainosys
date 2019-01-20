@@ -139,8 +139,8 @@ function trainosys_scripts() {
 
 	wp_enqueue_script( 'trainosys-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );
 	
-	if( is_page( 27 ) ) {//IF TRAINING PAGE
-		wp_enqueue_script( 'inquiry-popen', get_template_directory_uri() . '/js/inquire.js', array(), '2019118', true );
+	if( is_page( 27 ) || is_page( 35) ) {//IF COURSES or TRAINING PAGE
+		//wp_enqueue_script( 'inquiry-popen', get_template_directory_uri() . '/js/inquire.js', array(), '2019118', true );
 	}
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
@@ -187,3 +187,18 @@ if ( defined( 'JETPACK__VERSION' ) ) {
  * @author Ryan Hamilton
  * @link https://gist.github.com/Fantikerz/5557617
  */
+ 
+ 
+ /*CONTACT FORM*/
+add_filter( 'wpcf7_load_js', '__return_false' );
+add_filter( 'wpcf7_load_css', '__return_false' );
+
+if( is_page( 27 ) || is_page( 35) || is_page(33) ) {
+	if ( function_exists( 'wpcf7_enqueue_scripts' ) ) {
+		 wpcf7_enqueue_scripts();
+		 wp_enqueue_script( 'inquiry-popen', get_template_directory_uri() . '/js/inquire.js', array(), '2019118', true );
+	}
+	if ( function_exists( 'wpcf7_enqueue_styles' ) ) {
+		wpcf7_enqueue_styles();
+	}	
+}

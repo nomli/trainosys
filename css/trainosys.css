@@ -1,3 +1,6 @@
+html {
+  scroll-behavior: smooth;
+}
 body{
 	color:#666;
 	font-family: 'Open Sans', sans-serif;
@@ -465,6 +468,33 @@ span.wpcf7-list-item label{
 	font-size:15px !important;
 	margin-bottom:0;
 	text-transform: capitalize !important;
+}
+.wpcf7-mail-sent-ok{
+	color:green;
+	font-size: 20px;
+    font-weight: bold;
+    line-height: 1;
+    margin: auto !Important;
+    max-width: 1170px;
+    padding: 15px !important;
+    text-align: center;
+}
+.wpcf7-validation-errors{
+	color:red;
+	font-size: 20px;
+    font-weight: bold;
+    line-height: 1;
+    margin: auto !Important;
+    max-width: 1170px;
+    padding: 15px !important;
+    text-align: center;
+}
+.page-id-33 .wpcf7-validation-errors{
+	font-size:18px;
+	text-align:left;
+}
+.screen-reader-response{
+	display:none !important;
 }
 /*MEDIA QUERY*/
 @media (max-width:767px){
