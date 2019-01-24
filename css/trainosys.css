@@ -21,6 +21,8 @@ ul{
 [type="text"],
 [type="number"],
 [type="date"],
+[type="email"],
+[type="tel"],
 select,
 textarea{
 	border-radius: 0 !important;
