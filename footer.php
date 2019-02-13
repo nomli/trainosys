@@ -32,8 +32,12 @@
 								?>
 								</ul>
 								<div class="socialNcopy">
-										<a><i class="fab fa-facebook-f"></i></a>
-										<a><i class="fab fa-twitter"></i></a>
+										<a href="#"><i class="fab fa-facebook-f"></i></a>
+										<a href="#"><i class="fab fa-twitter"></i></a>
+										<a href="#"><i class="fab fa-youtube"></i></a>
+										<a href="#"><i class="fab fa-viber"></i></a>
+										<a href="#"><i class="fab fa-skype"></i></a>
+										<a href="#"><i class="fab fa-whatsapp"></i></a>
 										<p>All Rights Reserved</p>
 								</div>
 						</div>

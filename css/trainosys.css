@@ -64,7 +64,6 @@ textarea{
 @media (min-width:768px){
 	#primary-menu li>a{
 		border-bottom:0;
-		
 		padding:0;
 	}
 }
@@ -198,6 +197,7 @@ textarea{
 	border-radius:50%;
 	color:#313131;
 	display:inline-block;
+	font-size:20px;
 	margin:0 2px;
 	vertical-align:middle;
 	text-align:center;
@@ -365,6 +365,16 @@ textarea{
 	font-weight:700;
 	text-transform:uppercase;
 }
+#trainingInq .modal-header{
+	position:relative;
+}
+#trainingInq .modal-header .close{
+	color: black !important;
+    opacity: 1;
+	position:absolute;
+	right: 15px;
+    top: 35
+}
 #trainingInq .modal-title{
 	color: #378ed0;
 	text-align:center;
@@ -528,7 +538,7 @@ span.wpcf7-list-item label{
 	}
 	.site-branding{
 			float:left;
-			max-width:none;
+			max-width:300px;
    }
 	.site-footer .col-sm-8{
 		text-align:right;
@@ -578,6 +588,19 @@ span.wpcf7-list-item label{
 	/*ABOUT PAGE*/
 	#post-66 [class^="col-sm"]{
 		text-align: left;
+	}
+	/*MODAL*/
+	#trainingInq .row{
+		display:table;
+		width:100%;
+	}
+	#trainingInq .row>.col-sm-6{
+		float:none;
+		display:table-cell;
+		vertical-align:middle;
+	}
+	#trainingInq label{
+		margin-bottom:0;
 	}
 }
 @media (min-width:768px) and (max-width:991px){

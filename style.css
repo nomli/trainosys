@@ -737,7 +737,8 @@ a:hover, a:active {
 	}
 	.main-navigation ul {
 		display: block;
-	    line-height: 120px;
+	    line-height: 92px;
+	    //line-height: 120px;
 	}
 }
 
