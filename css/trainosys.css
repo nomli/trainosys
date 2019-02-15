@@ -423,7 +423,6 @@ textarea{
 	background-color:#f4f4f4;
 	text-align: center;
 }
-#post-25 .post-thumbnail img,
 #post-66 .post-thumbnail img{
 	width:auto;
 }
@@ -441,9 +440,29 @@ textarea{
 	text-align: center;
 }
 .aboutMission img,
-.aboutVission img{
+.aboutVission img,
+.mission-vission img{
 	margin-bottom:15px;
 }
+.mission-vision{
+	text-align:center;
+}
+.mission-vision img{
+	width:100%;
+}
+.temp-col{
+	margin:auto;
+	max-width:320px;
+	padding:0 15px 15px 15px;
+}
+@media(min-width:768px){
+	.temp-col{
+	  display:inline-block;
+		padding:0 15px;
+ 	  vertical-align:top;
+	}
+}
+
 /*CONTACT PAGE*/
 #contactUs h2{
 	color: #378ed0;
