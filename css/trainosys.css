@@ -232,6 +232,28 @@ textarea{
 	color:#378ed0;
 	text-transform: uppercase
 }
+.home .entry-content{
+		margin:0;
+	}
+	.afterHero{
+		 background-image: -moz-linear-gradient( 0deg, rgb(43,167,223) 0%, rgb(69,113,189) 11%, rgb(102,45,145) 87%, rgb(102,45,145) 100%);
+    background-image: -webkit-linear-gradient( 0deg, rgb(43,167,223) 0%, rgb(69,113,189) 11%, rgb(102,45,145) 87%, rgb(102,45,145) 100%);
+    background-image: -ms-linear-gradient( 0deg, rgb(43,167,223) 0%, rgb(69,113,189) 11%, rgb(102,45,145) 87%, rgb(102,45,145) 100%);
+    color: white;
+    display: table;
+    text-align: center;
+    width: 100%;
+	}
+	.afterHeroCell{
+		display:table-cell;
+		vertical-align:middle;
+	}
+	.afterHeroCell h2{
+		font-size:3.5vw;
+		font-weight:bold;
+		margin:0;
+		padding:0;
+	}
 .featuredPrograms a{
 	text-decoration: none;
 }
@@ -600,6 +622,9 @@ span.wpcf7-list-item label{
 		width:100%;
 	}
 	/*HOMEPAGE*/
+	.afterHeroCell h2{
+		font-size:38px;
+	}
 	.trainingCards .row>.col-sm-4{
 		padding:0 15px;
 		width:33.333333%;
@@ -631,6 +656,10 @@ span.wpcf7-list-item label{
 	}
 }
 @media (min-width:992px){
+	.afterHeroCell h2{
+		max-width:720px;
+		margin:auto;
+	}
 	.col-sm-5th{
 		float:left;
 		width:20%;

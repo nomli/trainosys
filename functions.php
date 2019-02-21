@@ -182,8 +182,5 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 	require get_template_directory() . '/inc/jetpack.php';
 }
 
-/**
- * Remove empty paragraphs created by wpautop()
- * @author Ryan Hamilton
- * @link https://gist.github.com/Fantikerz/5557617
- */
+remove_filter('the_content', 'wptexturize');
+remove_filter('the_excerpt', 'wptexturize');
