@@ -302,6 +302,11 @@ textarea{
     text-align: center;
 	text-decoration: none;
 }
+.trainingClass figure{
+	position: relative;
+	overflow:hidden;
+	height:150px;
+}
 .trainingClass figure>img{
 	width:100%;
 }
@@ -397,7 +402,7 @@ textarea{
 	right: 15px;
     top: 35
 }
-#trainingInq .modal-title{
+#trainingInq .modal-title,#trainingInq .modal-title+p{
 	color: #378ed0;
 	text-align:center;
 	text-transform:uppercase;
