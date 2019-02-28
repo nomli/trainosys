@@ -32,12 +32,10 @@
 								?>
 								</ul>
 								<div class="socialNcopy">
-										<a href="#"><i class="fab fa-facebook-f"></i></a>
-										<a href="#"><i class="fab fa-twitter"></i></a>
-										<a href="#"><i class="fab fa-youtube"></i></a>
-										<a href="#"><i class="fab fa-viber"></i></a>
-										<a href="#"><i class="fab fa-skype"></i></a>
-										<a href="#"><i class="fab fa-whatsapp"></i></a>
+										<a href="mailto:inquiry@trainosys.com"><i class="far fa-envelope"></i></a>
+										<a href="https://www.facebook.com/Trainosys-Training-Solutions-349735535589572/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+										<a href="viber://add?number=6583182056" target="_blank"><i class="fab fa-viber"></i></a>
+										<a href="https://wa.me/6583182056" target="_blank"><i class="fab fa-whatsapp"></i></a>
 										<p>All Rights Reserved</p>
 								</div>
 						</div>

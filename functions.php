@@ -127,7 +127,7 @@ function trainosys_scripts() {
 	
 	wp_enqueue_style( 'Opensans-Font', 'https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,700,800', array(), '20181213');
 	
-	wp_enqueue_style( 'Fontawsome', 'https://use.fontawesome.com/releases/v5.6.1/css/all.css', array(), '20181213');
+	wp_enqueue_style( 'Fontawsome', 'https://use.fontawesome.com/releases/v5.7.2/css/all.css', array(), '20190228');
 	
 	wp_enqueue_style( 'trainosys-style',  get_template_directory_uri() . '/css/trainosys.css', array(), '2019118');
 
