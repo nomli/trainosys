@@ -554,6 +554,13 @@ span.wpcf7-list-item label{
 .screen-reader-response{
 	display:none !important;
 }
+/*CONTACT FORM 7*/
+.wpcf7-not-valid-tip{
+	color:red;
+	font-size:11px;
+	font-style:italic;
+	font-weight:bold;
+}
 /*MEDIA QUERY*/
 @media (max-width:767px){
 	.home .featuredPrograms .col-xs-6 {
